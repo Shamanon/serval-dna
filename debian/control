@@ -10,6 +10,8 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: serval-dna
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends}, ${shlibs:Depends}, adduser
+Description: The Serval-DNA Daemon
+ The Serval Project's Serval Daemon, incorporating
+ Distributed Numbering Architecture (DNA), Rhizome,
+ MDP, VoMP, etc.
