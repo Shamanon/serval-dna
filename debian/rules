@@ -6,10 +6,3 @@
 
 %:
 	dh $@  --with autotools-dev
-
-override_dh_auto_configure:
-	autoreconf -f -i
-	./configure
-
-override_dh_auto_build:
-	$(MAKE)
