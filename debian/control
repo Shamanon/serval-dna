@@ -10,7 +10,7 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: serval-dna
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, adduser
+Depends: ${misc:Depends}, adduser
 Description: The Serval-DNA Daemon
  The Serval Project's Serval Daemon, incorporating
  Distributed Numbering Architecture (DNA), Rhizome,
