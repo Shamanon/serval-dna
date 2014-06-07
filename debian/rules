@@ -4,10 +4,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-clean:
-	dh clean --with autotools-dev
-	autoreconf -f -i
-	./configure
-
 %:
 	dh $@  --with autotools-dev
+
+override_dh_auto_configure:
+	autoreconf -f -i
+	./configure
+	dh_auto_configure
